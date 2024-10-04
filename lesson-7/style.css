@@ -1,0 +1,75 @@
+.container{
+    width: 1200px;
+    height: 700px;
+    border: 4px solid blueviolet;
+    margin: 0 auto;
+}
+
+.content{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation{
+    0% {
+      margin-right: 92%;
+      border-radius: 0%;
+    }
+    50% {
+      background-color: yellow;
+    }
+    100% {
+    margin-left: 92%;   
+    background-color: blue; 
+    border-radius: 20%;    
+    }
+}
+
+.content-1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    animation-name: right;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes right{
+    0%{
+        margin-left: 92%;
+    }
+    100%{
+        margin-right: 92%;
+        background-color: aqua;
+        border-radius: 0%;
+    }
+}
+
+.content-2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+    animation-name: top;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes top{
+    0% {
+        margin-bottom: 34%;
+    }
+    100% {
+        margin-top: 34%;
+        background-color: black;
+        border-radius: 0%;
+    }
+}

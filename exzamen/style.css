@@ -1,0 +1,149 @@
+.header{
+    width: 1440px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  blue;
+    color: aliceblue;
+    margin: 0 auto;
+}
+.header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
+.lg{
+    margin-left: 20px;
+}
+.lgn{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    margin-right: 15px;
+    border-radius: 6px;
+    background-color: yellow;
+}
+.main{
+    width: 1440px;
+    height: 666px;
+    display: grid;
+    border: 4px solid black;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,200px);
+    margin: 0 0;
+    gap: 30px;
+    margin: 0 auto;
+}
+.text-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: green;
+}
+.text-2{
+    background-color: greenyellow;
+}
+.text-3{
+    background-color: rgb(39, 159, 111);
+
+
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+.text-4{
+    background-color: red;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.text-5{
+    background-color: violet;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+}
+
+.cub{
+    width: 1440px;
+    height: 1000px;
+    border: 10px solid black;
+    position: relative;
+    margin: 0 auto;
+}
+.red{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation-name: right;
+    animation-duration: 10s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+@keyframes right{
+    0%{left:0
+
+}
+    25%{
+      left: 1340px;
+      top: 0px;  
+}
+    50%{
+     left: 0px;
+     top: 910px;
+}
+    75%{
+      left: 1340px;
+      top: 910px;  
+}
+    100%{
+        left: 0px;
+        top: 0px;
+    }
+
+}
+
+.container{
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.card{
+    width: 350px;
+    height: 400px;
+    border: 3px black;
+    border-radius: 6px;
+    padding: 6px 8px;
+    box-shadow: 0 5px 10px black;
+}
+.image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    object-fit: cover;
+}
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+}
+.btn{
+    width: 130px;
+    height: 45px;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 20px;
+    color: antiquewhite;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+.brand{
+    color: grey;
+    margin-right: 20px;
+}
